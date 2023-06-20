@@ -8,7 +8,7 @@ colorama - 🎨 for coloring the outputs!
 
 <h2>Current tasks</h2>
 
- ✔️ Create UI design
+ ✔️ Create an awesome UI design
  
  ✔️ Create logic for Indexer
  
