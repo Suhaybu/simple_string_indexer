@@ -1,44 +1,40 @@
-# This file's purpose is handelling most of the print statemnts
+# This file's purpose is storing all print statemnts
+from colorama import Fore, Style
 
-from magic import index_string, clear_terminal
-from colorama import init, Fore
-
-init()
 
 # Greeting
 greeting = f'''
-{Fore.CYAN}:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-{Fore.CYAN}::{Fore.RED}█▀ █ █▀▄▀█ █▀█ █░░ █▀▀   █▀ ▀█▀ █▀█ █ █▄░█ █▀▀   █ █▄░█ █▀▄ █▀▀ ▀▄▀ █▀▀ █▀█{Fore.CYAN}::
-{Fore.CYAN}::{Fore.RED}▄█ █ █░▀░█ █▀▀ █▄▄ ██▄   ▄█ ░█░ █▀▄ █ █░▀█ █▄█   █ █░▀█ █▄▀ ██▄ █░█ ██▄ █▀▄{Fore.CYAN}::
-{Fore.CYAN}:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+{Fore.LIGHTYELLOW_EX}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+{Fore.LIGHTYELLOW_EX}┃ {Fore.RED}█▀ █ █▀▄▀█ █▀█ █░░ █▀▀   █▀ ▀█▀ █▀█ █ █▄░█ █▀▀   █ █▄░█ █▀▄ █▀▀ ▀▄▀ █▀▀ █▀█{Fore.LIGHTYELLOW_EX} ┃
+{Fore.LIGHTYELLOW_EX}┃ {Fore.RED}▄█ █ █░▀░█ █▀▀ █▄▄ ██▄   ▄█ ░█░ █▀▄ █ █░▀█ █▄█   █ █░▀█ █▄▀ ██▄ █░█ ██▄ █▀▄{Fore.LIGHTYELLOW_EX} ┃
+{Fore.LIGHTYELLOW_EX}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
 {Fore.CYAN}:::::::::::::::::· {Fore.RESET}Welcome user to my simple Python program! {Fore.CYAN}·:::::::::::::::::
 {Fore.CYAN}:::::::· {Fore.RESET}Coded & designed by suhaybu. ASCII text https://fsymbols.com/ {Fore.CYAN}·:::::::{Fore.RESET}
 '''
 
-# Breaker
-breaker = f'{Fore.CYAN}:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::{Fore.RESET}'
+
+# Ask for string input
+ask_option = f'{Fore.CYAN}:: {Fore.YELLOW}Enter your choice{Fore.WHITE}: {Fore.RESET}'
+ask_delimiter = f'{Fore.CYAN}:: {Fore.YELLOW}Enter the delimiter of your choice{Fore.WHITE}: {Fore.RESET}'
+ask_input = f'{Fore.CYAN}:: {Fore.YELLOW}Enter the string you wish to index{Fore.WHITE}: {Fore.RESET}'
+
+# Splitters
+split_select = f'{Fore.CYAN}:::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Select an option: {Fore.CYAN}·:::::::::::::::::::::::::::::{Fore.RESET}'
+split_input = f'{Fore.CYAN}::::::::::::::::::::::::::::::::· {Fore.BLUE}Your input: {Fore.CYAN}·::::::::::::::::::::::::::::::::{Fore.RESET}'
+split_result = f'{Fore.CYAN}::::::::::::::::::::::::::::::· {Fore.BLUE}Indexed Result: {Fore.CYAN}·::::::::::::::::::::::::::::::{Fore.RESET}'
 
 
-# Ask for input
-def get_input():
-    input_string = input(f'{Fore.CYAN}:: {Fore.YELLOW}Enter the string you wish to index:\n{Fore.WHITE}')
-    return input_string
-
-
-# Print method
-def get_output(input_string):
-    # Prepares the terminal for new output interface
-    clear_terminal()
-    print(greeting)
-    print(breaker)
-
-    print('HERE ARE YOUR STRING WITH INDEXES:')
-    print(index_string(input_string))
-
-
-input_string = ''
-
-print(greeting)
-input = get_input()
-get_output(input)
-# get_output('My test is this sentence')
+# MENUES
+menu_delimiter = f'''{Fore.LIGHTYELLOW_EX}╔═════════════════════════════════════════════════════════════════════════════╗
+║ {Fore.WHITE}1. {Fore.LIGHTBLUE_EX}Default{Fore.WHITE}: {Fore.WHITE}Words in string are seperated with single SPACE{Style.RESET_ALL}{Fore.LIGHTYELLOW_EX}                 ║
+║ {Fore.WHITE}2. {Fore.LIGHTBLUE_EX}Custom{Fore.WHITE}: {Fore.WHITE}Provide a custom delimiter{Style.RESET_ALL}{Fore.LIGHTYELLOW_EX}                                       ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+'''
+menu_other_options = f'''{Fore.LIGHTYELLOW_EX}╔═════════════════════════════════════════════════════════════════════════════╗
+║ {Fore.WHITE}1. {Fore.WHITE}Find index of a specific word{Fore.LIGHTYELLOW_EX}                                            ║
+║ {Fore.WHITE}2. {Fore.WHITE}Find word at a specfiic index{Fore.LIGHTYELLOW_EX}                                            ║
+║ {Fore.WHITE}3. {Fore.WHITE}Input another String{Fore.LIGHTYELLOW_EX}                                                     ║
+║ {Fore.WHITE}4. {Fore.WHITE}Exit{Fore.LIGHTYELLOW_EX}                                                                     ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+'''

@@ -4,11 +4,11 @@ import os
 
 
 # Indexing method
-def index_string(input_string):
+def index_string(input_string, delimiter):
     # Splitting the string and adding index
-    modified_list = [f'[{index}]{word}' for index, word in enumerate(input_string.split())]
+    modified_list = [f'[{index}]{word}' for index, word in enumerate(input_string.split(delimiter))]
     # Joining words into one string again
-    output = ' '.join(modified_list)
+    output = delimiter.join(modified_list)
     return output
 
 
