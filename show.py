@@ -14,7 +14,7 @@ def get_output(input_string, delimiter):
 
 
 # Selector styler
-selected_choice = 0
+selected_choice = 1
 if selected_choice == 1:
     menu_delimiter = menu_delimiter.replace(f'{selected_choice}.', f'{Style.BRIGHT}{selected_choice}.')
     menu_delimiter = menu_delimiter.replace(f'{selected_choice+1}.', f'{Style.DIM}{selected_choice}.')

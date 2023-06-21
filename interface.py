@@ -1,4 +1,5 @@
 # This file's purpose is storing all print statemnts
+from os import error
 from colorama import Fore, Style
 
 
@@ -20,9 +21,9 @@ ask_delimiter = f'{Fore.CYAN}:: {Fore.YELLOW}Enter the delimiter of your choice{
 ask_input = f'{Fore.CYAN}:: {Fore.YELLOW}Enter the string you wish to index{Fore.WHITE}: {Fore.RESET}'
 
 # Splitters
-split_select = f'{Fore.CYAN}:::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Select an option: {Fore.CYAN}·:::::::::::::::::::::::::::::{Fore.RESET}'
-split_input = f'{Fore.CYAN}::::::::::::::::::::::::::::::::· {Fore.BLUE}Your input: {Fore.CYAN}·::::::::::::::::::::::::::::::::{Fore.RESET}'
-split_result = f'{Fore.CYAN}::::::::::::::::::::::::::::::· {Fore.BLUE}Indexed Result: {Fore.CYAN}·::::::::::::::::::::::::::::::{Fore.RESET}'
+split_option = f'{Fore.CYAN}:::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Select an option: {Fore.CYAN}·:::::::::::::::::::::::::::::{Fore.RESET}'
+split_input = f'{Fore.CYAN}::::::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Your input: {Fore.CYAN}·::::::::::::::::::::::::::::::::{Fore.RESET}'
+split_result = f'{Fore.CYAN}::::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Indexed Result: {Fore.CYAN}·::::::::::::::::::::::::::::::{Fore.RESET}'
 
 
 # MENUES
@@ -36,5 +37,11 @@ menu_other_options = f'''{Fore.LIGHTYELLOW_EX}╔══════════�
 ║ {Fore.WHITE}2. {Fore.WHITE}Find word at a specfiic index{Fore.LIGHTYELLOW_EX}                                            ║
 ║ {Fore.WHITE}3. {Fore.WHITE}Input another String{Fore.LIGHTYELLOW_EX}                                                     ║
 ║ {Fore.WHITE}4. {Fore.WHITE}Exit{Fore.LIGHTYELLOW_EX}                                                                     ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+'''
+
+# Errors
+error_option = f'''{Fore.LIGHTYELLOW_EX}╔═════════════════════════════════════════════════════════════════════════════╗
+║                 {Style.BRIGHT}{Fore.RED}Invalid Choice. Please enter a valid number{Style.RESET_ALL}{Fore.LIGHTYELLOW_EX}                 ║
 ╚═════════════════════════════════════════════════════════════════════════════╝
 '''
