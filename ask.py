@@ -1,41 +1,46 @@
 # Imports
+from discord import option
 import interface
-
-# Initializers
 
 
 # Ask for delimiter
 def get_delimiter() -> str:
-    print(interface.split_option)
-    print(interface.menu_delimiter)
+    print(interface.splitter('select'))  # Prints the splitter for select option
+    print(interface.menu('delimiter'))  # Prints delimiter menu
+    # Catches invalid input
     while True:
         try:
-            choice = int(input(interface.ask_option))
+            choice = int(input(interface.enter('choice')))  # Prompts the user for choice
             if choice == 1:
                 return ' '
             elif choice == 2:
-                return input(interface.ask_delimiter)
+                return input(interface.enter('delimiter'))
             else:
-                print(interface.error_option)
+                print(interface.error('invalid choice'))
+                print(interface.menu('delimiter'))
         except ValueError:
-            print(interface.error_option)
+            print(interface.error('invalid choice'))
+            print(interface.menu('delimiter'))
 
 
-# Ask for input
+# Asks the user for input
 def get_string():
-    print(interface.split_input)
-    return input(interface.ask_input)
+    print(interface.splitter('user input'))
+    return input(interface.enter('input'))
 
 
+# Asks the user for other options
 def other_options():
-    print(interface.split_option)
-    print(interface.menu_other_options)
+    print(interface.splitter('select'))  # Prints the splitter for select option
+    print(interface.menu('other options'))
     while True:
         try:
-            choice = int(input(interface.ask_option))
+            choice = int(input(interface.enter('choice')))
             if 1 <= choice <= 4:
                 return choice
             else:
-                print(interface.error_option)
+                print(interface.error('invalid choice'))
+                print(interface.menu('other options'))
         except ValueError:
-            print(interface.error_option)
+            print(interface.error('invalid choice'))
+            print(interface.menu('other options'))

@@ -12,6 +12,15 @@ def index_string(input_string, delimiter):
     return output
 
 
+# Search methods
+def find_index():
+    print()
+
+
+def find_word():
+    ...
+
+
 # Clear terminal screen
 def clear_terminal():
     # Need to identify OS

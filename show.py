@@ -9,7 +9,7 @@ input_string = ''
 # Print method
 def get_output(input_string, delimiter):
     # Prepares the terminal for new output interface
-    print(interface.split_result)
+    print(interface.splitter('result'))
     print(index_string(input_string, delimiter))
 
 
