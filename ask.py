@@ -37,7 +37,12 @@ def other_options():
         try:
             choice = int(input(interface.enter('choice')))
             if 1 <= choice <= 4:
-                return choice
+                if choice == 1:
+                    return 'find index'
+                elif choice == 2:
+                    return 'find word'
+                elif choice == 3:
+                    return 'input'
             else:
                 print(interface.error('invalid choice'))
                 print(interface.menu('other options'))

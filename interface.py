@@ -20,11 +20,11 @@ def enter(state):
         return f'{Fore.CYAN}:: {Fore.YELLOW}Enter your choice{Fore.WHITE}: {Fore.RESET}'
     elif state == 'delimiter':
         return f'{Fore.CYAN}:: {Fore.YELLOW}Enter the delimiter of your choice{Fore.WHITE}: {Fore.RESET}'
-    elif state == 'input':
+    elif state == 'input' or 1:
         return f'{Fore.CYAN}:: {Fore.YELLOW}Enter the string you wish to index{Fore.WHITE}: {Fore.RESET}'
-    elif state == 'find index':
+    elif state == 'find index' or 2:
         return f'{Fore.CYAN}:: {Fore.YELLOW}Enter the word to find it\'s index{Fore.WHITE}: {Fore.RESET}'
-    elif state == 'find word':
+    elif state == 'find word' or 3:
         return f'{Fore.CYAN}:: {Fore.YELLOW}Enter the index to return it\'s word{Fore.WHITE}: {Fore.RESET}'
 
 

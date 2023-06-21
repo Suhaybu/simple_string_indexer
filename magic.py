@@ -13,12 +13,15 @@ def index_string(input_string, delimiter):
 
 
 # Search methods
-def find_index():
-    print()
+def find_index(input_string, word):
+    return input_string.index(word)
 
 
-def find_word():
-    ...
+def find_word(input_string, index):
+    if index < len(input_string):
+        return input_string[index]
+    else:
+        return 'Index out of range'
 
 
 # Clear terminal screen
