@@ -17,12 +17,10 @@ def get_output(input_string, delimiter):
 def get_other_option(input_string, choice):
     # Replace choice number with appropriate string
     print(interface.splitter(choice))
-    # data = input(interface.enter(choice))
+    data = input(interface.enter(choice))
     if choice == 'find index':
-        data = input(interface.enter('find index'))
         print(magic.find_index(input_string, data))
     elif choice == 'find word':
-        data = input(interface.enter('find word'))
         print(interface.splitter('return word'))
         print(magic.find_word(input_string, data))
 
