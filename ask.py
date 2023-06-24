@@ -43,6 +43,9 @@ def other_options():
                     return 'find word'
                 elif choice == 3:
                     return 'input'
+                # TODO
+                elif choice == 4:
+                    return 'exit'
             else:
                 print(interface.error('invalid choice'))
                 print(interface.menu('other options'))
