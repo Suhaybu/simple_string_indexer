@@ -11,10 +11,8 @@ while choice == 'input':
     show.get_output(user_input, delimiter)
     choice = ask.other_options()
 
-    while choice != 'exit':
-        print(f'choice is {choice}')
-        if choice != 'input' and choice != 'exit':
-            show.get_other_option(user_input, choice)
-            print(f'end of choice {choice}')
+    if choice != 'input' and choice != 'exit':
+        show.get_other_option(user_input, choice)
+        choice = ask.other_options()
 
 raise SystemExit("Exiting the program.")
