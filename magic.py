@@ -14,7 +14,11 @@ def index_string(input_string, delimiter):
 
 # Search methods
 def find_index(input_string, word):
-    return input_string.index(word)
+    # Converts integer inputs to string
+    if isinstance(word, str):
+        return input_string.index(word)
+    elif isinstance(word, int):
+        return input_string.index(str(word))
 
 
 def find_word(input_string, index):

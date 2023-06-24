@@ -1,6 +1,6 @@
 from magic import clear_terminal, index_string, find_index, find_word
 import interface
-from interface import menu_delimiter
+from interface import menu
 from colorama import Style
 
 input_string = ''
@@ -19,12 +19,17 @@ def get_other_option(input_string, choice):
     if choice != 'input':
         data = input(interface.enter(choice))
         if choice == 'find index':
-            find_index(input_string, data)
+            return find_index(input_string, data)
         elif choice == 'find word':
-            find_word(input_string, data)
+            return find_word(input_string, data)
+    elif choice == 'input':
+        return -1
+    elif choice == 'exit':
+        return None
 
 
-# Selector styler
+# TODO: Selector styler
+menu_delimiter = menu('delimiter')
 selected_choice = 1
 if selected_choice == 1:
     menu_delimiter = menu_delimiter.replace(f'{selected_choice}.', f'{Style.BRIGHT}{selected_choice}.')
