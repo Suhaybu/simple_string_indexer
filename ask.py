@@ -1,5 +1,4 @@
 # Imports
-from discord import option
 import interface
 
 
