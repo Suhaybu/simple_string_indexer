@@ -23,7 +23,7 @@ def get_other_option(input_string, choice):
         elif choice == 'find word':
             return find_word(input_string, data)
     elif choice == 'input':
-        return -1
+        return None
     elif choice == 'exit':
         return None
 
