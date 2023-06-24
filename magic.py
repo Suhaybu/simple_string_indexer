@@ -1,5 +1,6 @@
 # This files purpose is to handle the more technical stuff
 
+import interface
 import os
 from colorama import Fore
 
@@ -18,14 +19,19 @@ def index_string(input_string, delimiter):
 
 # Search methods
 def find_index(input_string, word):
-    # Converts integer inputs to string
-    if isinstance(word, str):
-        return input_string.index(word)
-    elif isinstance(word, int):
-        return input_string.index(str(word))
+    print(interface.splitter('return index'))
+    try:
+        # Converts integer inputs to string
+        if isinstance(word, str):
+            return input_string.index(word)
+        elif isinstance(word, int):
+            return input_string.index(str(word))
+    except ValueError:
+        return 'Word not found'
 
 
 def find_word(input_string, index):
+    print(interface.splitter('return word'))
     if index < len(input_string):
         return input_string[index]
     else:

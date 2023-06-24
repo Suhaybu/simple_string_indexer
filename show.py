@@ -1,5 +1,6 @@
-from magic import clear_terminal, index_string, find_index, find_word
+import magic
 import interface
+from magic import clear_terminal
 from interface import menu
 from colorama import Style
 
@@ -10,22 +11,20 @@ input_string = ''
 def get_output(input_string, delimiter):
     # Prepares the terminal for new output interface
     print(interface.splitter('result'))
-    print(index_string(input_string, delimiter))
+    print(magic.index_string(input_string, delimiter))
 
 
 def get_other_option(input_string, choice):
     # Replace choice number with appropriate string
     print(interface.splitter(choice))
-    if choice != 'input':
-        data = input(interface.enter(choice))
-        if choice == 'find index':
-            return find_index(input_string, data)
-        elif choice == 'find word':
-            return find_word(input_string, data)
-    elif choice == 'input':
-        return None
-    elif choice == 'exit':
-        return None
+    # data = input(interface.enter(choice))
+    if choice == 'find index':
+        data = input(interface.enter('find index'))
+        print(magic.find_index(input_string, data))
+    elif choice == 'find word':
+        data = input(interface.enter('find word'))
+        print(interface.splitter('return word'))
+        print(magic.find_word(input_string, data))
 
 
 # TODO: Selector styler

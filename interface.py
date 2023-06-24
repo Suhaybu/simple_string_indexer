@@ -22,9 +22,9 @@ def enter(state):
         return f'{Fore.CYAN}:: {Fore.YELLOW}Enter the delimiter of your choice{Fore.WHITE}: {Fore.RESET}'
     elif state == 'input' or 1:
         return f'{Fore.CYAN}:: {Fore.YELLOW}Enter the string you wish to index{Fore.WHITE}: {Fore.RESET}'
-    elif state == 'find index' or 2:
+    elif state == 'find index':
         return f'{Fore.CYAN}:: {Fore.YELLOW}Enter the word to find it\'s index{Fore.WHITE}: {Fore.RESET}'
-    elif state == 'find word' or 3:
+    elif state == 'find word':
         return f'{Fore.CYAN}:: {Fore.YELLOW}Enter the index to return it\'s word{Fore.WHITE}: {Fore.RESET}'
 
 
@@ -42,6 +42,10 @@ def splitter(type):
         return f'{Fore.CYAN}::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Find word at index: {Fore.CYAN}·::::::::::::::::::::::::::::{Fore.RESET}'
     elif type == 'find index':
         return f'{Fore.CYAN}:::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Find index of a word: {Fore.CYAN}·:::::::::::::::::::::::::::{Fore.RESET}'
+    elif type == 'return index':
+        return f'{Fore.CYAN}::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}The index of your word: {Fore.CYAN}·::::::::::::::::::::::::::{Fore.RESET}'
+    elif type == 'return word':
+        return f'{Fore.CYAN}::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}The word at your index: {Fore.CYAN}·::::::::::::::::::::::::::{Fore.RESET}'
 
 
 # MENUES

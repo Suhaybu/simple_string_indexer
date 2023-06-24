@@ -35,7 +35,7 @@ def other_options():
     while True:
         try:
             choice = int(input(interface.enter('choice')))
-            if 1 <= choice <= 4:
+            if 1 <= choice <= 3:
                 if choice == 1:
                     return 'find index'
                 elif choice == 2:
