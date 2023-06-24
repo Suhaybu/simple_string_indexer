@@ -21,12 +21,14 @@ def index_string(input_string, delimiter):
 # Takes user input and word to return index of word
 def get_index(input_string, word):
     print(interface.splitter('return index'))
+    # Splits the user input string into seperate words stored in a list
+    words = input_string.split()
     try:
         # Converts integer inputs to string
         if isinstance(word, str):
-            return input_string.index(word)
+            return words.index(word)
         elif isinstance(word, int):
-            return input_string.index(str(word))
+            return words.index(str(word))
     except ValueError:
         return 'Word not found'
 
