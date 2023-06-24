@@ -19,10 +19,10 @@ def get_other_option(input_string, choice):
     print(interface.splitter(choice))
     data = input(interface.enter(choice))
     if choice == 'find index':
-        print(magic.find_index(input_string, data))
+        print(magic.get_index(input_string, data))
     elif choice == 'find word':
         print(interface.splitter('return word'))
-        print(magic.find_word(input_string, data))
+        print(magic.get_word(input_string, data))
 
 
 # TODO: Selector styler

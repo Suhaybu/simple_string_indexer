@@ -1,13 +1,13 @@
-# This files purpose is to handle the more technical stuff
+# This file's purpose is to handle the more technical backend stuff
 
 import interface
 import os
 from colorama import Fore
 
 
-# Indexing method
+# Indexing method:
 def index_string(input_string, delimiter):
-    # Splitting the string and adding index
+    # Splitting the string and adding index and coloring it
     modified_list = [
         f'{Fore.LIGHTBLACK_EX}[{Fore.LIGHTBLUE_EX}{index}{Fore.LIGHTBLACK_EX}]{Fore.RESET}{word}'
         for index, word in enumerate(input_string.split(delimiter))
@@ -17,8 +17,9 @@ def index_string(input_string, delimiter):
     return output
 
 
-# Search methods
-def find_index(input_string, word):
+# Search methods:
+# Takes user input and word to return index of word
+def get_index(input_string, word):
     print(interface.splitter('return index'))
     try:
         # Converts integer inputs to string
@@ -30,15 +31,21 @@ def find_index(input_string, word):
         return 'Word not found'
 
 
-def find_word(input_string, index):
+# Takes user input and index to return word @ index
+def get_word(input_string, index):
     print(interface.splitter('return word'))
-    if index < len(input_string):
-        return input_string[index]
+    # Splits the user input string into seperate words stored in a list
+    words = input_string.split()
+    # Ensures input index is int
+    index = int(index)
+    # Ensures index is within range
+    if 0 <= index < len(words):
+        return words[index]
     else:
         return 'Index out of range'
 
 
-# Clear terminal screen
+# Clears terminal screen with respect to OS
 def clear_terminal():
     # Need to identify OS
     if os.name == 'nt':  # Windows

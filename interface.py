@@ -10,8 +10,7 @@ greeting = f'''
 {Fore.LIGHTYELLOW_EX}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 {Fore.CYAN}:::::::::::::::::· {Fore.RESET}Welcome user to my simple Python program! {Fore.CYAN}·:::::::::::::::::
-{Fore.CYAN}:::::::· {Fore.RESET}Coded & designed by suhaybu. ASCII text https://fsymbols.com/ {Fore.CYAN}·:::::::{Fore.RESET}
-'''
+{Fore.CYAN}:::::::· {Fore.RESET}Coded & designed by suhaybu. ASCII text https://fsymbols.com/ {Fore.CYAN}·:::::::{Fore.RESET}'''
 
 
 # Askers
@@ -31,21 +30,21 @@ def enter(state):
 # Splitters
 def splitter(type):
     if type == 'select':
-        return f'{Fore.CYAN}:::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Select an option: {Fore.CYAN}·:::::::::::::::::::::::::::::{Fore.RESET}'
+        return f'\n{Fore.CYAN}:::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Select an option: {Fore.CYAN}·:::::::::::::::::::::::::::::{Fore.RESET}'
     elif type == 'user input':
-        return f'{Fore.CYAN}::::::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Your input: {Fore.CYAN}·::::::::::::::::::::::::::::::::{Fore.RESET}'
+        return f'\n{Fore.CYAN}::::::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Your input: {Fore.CYAN}·::::::::::::::::::::::::::::::::{Fore.RESET}'
     elif type == 'result':
-        return f'{Fore.CYAN}::::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Indexed Result: {Fore.CYAN}·::::::::::::::::::::::::::::::{Fore.RESET}'
+        return f'\n{Fore.CYAN}::::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Indexed Result: {Fore.CYAN}·::::::::::::::::::::::::::::::{Fore.RESET}'
     elif type == 'input':
-        return f'{Fore.CYAN}:::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Input another String: {Fore.CYAN}·:::::::::::::::::::::::::::{Fore.RESET}'
+        return f'\n{Fore.CYAN}:::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Input another String: {Fore.CYAN}·:::::::::::::::::::::::::::{Fore.RESET}'
     elif type == 'find word':
-        return f'{Fore.CYAN}::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Find word at index: {Fore.CYAN}·::::::::::::::::::::::::::::{Fore.RESET}'
+        return f'\n{Fore.CYAN}::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Find word at index: {Fore.CYAN}·::::::::::::::::::::::::::::{Fore.RESET}'
     elif type == 'find index':
-        return f'{Fore.CYAN}:::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Find index of a word: {Fore.CYAN}·:::::::::::::::::::::::::::{Fore.RESET}'
+        return f'\n{Fore.CYAN}:::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Find index of a word: {Fore.CYAN}·:::::::::::::::::::::::::::{Fore.RESET}'
     elif type == 'return index':
-        return f'{Fore.CYAN}::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}The index of your word: {Fore.CYAN}·::::::::::::::::::::::::::{Fore.RESET}'
+        return f'\n{Fore.CYAN}::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}The index of your word: {Fore.CYAN}·::::::::::::::::::::::::::{Fore.RESET}'
     elif type == 'return word':
-        return f'{Fore.CYAN}::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}The word at your index: {Fore.CYAN}·::::::::::::::::::::::::::{Fore.RESET}'
+        return f'\n{Fore.CYAN}::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}The word at your index: {Fore.CYAN}·::::::::::::::::::::::::::{Fore.RESET}'
 
 
 # MENUES

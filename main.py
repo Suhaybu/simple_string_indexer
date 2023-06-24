@@ -11,7 +11,7 @@ while choice == 'input':
     show.get_output(user_input, delimiter)
     choice = ask.other_options()
 
-    if choice != 'input' and choice != 'exit':
+    while choice != 'input' and choice != 'exit':
         show.get_other_option(user_input, choice)
         choice = ask.other_options()
 
