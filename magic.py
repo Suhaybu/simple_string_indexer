@@ -1,12 +1,16 @@
 # This files purpose is to handle the more technical stuff
 
 import os
+from colorama import Fore
 
 
 # Indexing method
 def index_string(input_string, delimiter):
     # Splitting the string and adding index
-    modified_list = [f'[{index}]{word}' for index, word in enumerate(input_string.split(delimiter))]
+    modified_list = [
+        f'{Fore.LIGHTBLACK_EX}[{Fore.LIGHTBLUE_EX}{index}{Fore.LIGHTBLACK_EX}]{Fore.RESET}{word}'
+        for index, word in enumerate(input_string.split(delimiter))
+    ]
     # Joining words into one string again
     output = delimiter.join(modified_list)
     return output
@@ -37,6 +41,6 @@ def clear_terminal():
         os.system('clear')
 
 
-# Line length formatter to insure no line contains characters longer than 75
+# TODO Line length formatter to insure no line contains characters longer than 75
 def length_formatter():
     ...
