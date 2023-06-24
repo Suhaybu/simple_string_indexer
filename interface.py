@@ -23,9 +23,9 @@ def enter(state):
     elif state == 'input' or 1:
         return f'{Fore.CYAN}:: {Fore.YELLOW}Enter the string you wish to index{Fore.WHITE}: {Fore.RESET}'
     elif state == 'find index':
-        return f'{Fore.CYAN}:: {Fore.YELLOW}Enter the word to find it\'s index{Fore.WHITE}: {Fore.RESET}'
+        return f'{Fore.CYAN}:: {Fore.YELLOW}Enter the word to find its index{Fore.WHITE}: {Fore.RESET}'
     elif state == 'find word':
-        return f'{Fore.CYAN}:: {Fore.YELLOW}Enter the index to return it\'s word{Fore.WHITE}: {Fore.RESET}'
+        return f'{Fore.CYAN}:: {Fore.YELLOW}Enter the index to return its word{Fore.WHITE}: {Fore.RESET}'
 
 
 # Splitters
