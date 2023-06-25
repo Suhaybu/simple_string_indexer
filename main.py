@@ -13,7 +13,7 @@ if __name__ == '__main__':
         choice = ask.other_options()
 
         while choice != 'input' and choice != 'exit':
-            show.get_other_option(user_input, choice)
+            show.get_other_option(user_input, choice, delimiter)
             choice = ask.other_options()
 
     raise SystemExit("Exiting the program.")
