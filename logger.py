@@ -8,15 +8,19 @@ class Logger:
     def __init__(self) -> None:
         print('Test')
 
-    def add(state):
-        Logger.log.append(state)
+    @staticmethod
+    def add(state, data=None):
+        if data == None:
+            data = 1
+        Logger.log.append((state, data))
 
+    @staticmethod
     def retrieve():
         return Logger.log
 
 
 Logger()
 Logger.add('greeting')
-Logger.add('printed')
+Logger.add('printed', 'true')
 Logger.add('exit')
 print(Logger.retrieve())

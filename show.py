@@ -1,5 +1,7 @@
+from venv import logger
 import magic
 import interface
+from logger import Logger
 from magic import clear_terminal
 from interface import menu
 from colorama import Fore, Style
