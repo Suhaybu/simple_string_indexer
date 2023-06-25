@@ -14,15 +14,14 @@ def get_output(input_string, delimiter):
     print(magic.index_string(input_string, delimiter))
 
 
-def get_other_option(input_string, choice):
+def get_other_option(input_string, choice, delimiter):
     # Replace choice number with appropriate string
     print(interface.splitter(choice))
     data = input(interface.enter(choice))
     if choice == 'find index':
-        print(magic.get_index(input_string, data))
+        print(magic.get_index(input_string, data, delimiter))
     elif choice == 'find word':
-        print(interface.splitter('return word'))
-        print(magic.get_word(input_string, data))
+        print(magic.get_word(input_string, data, delimiter))
 
 
 # TODO: Selector styler
