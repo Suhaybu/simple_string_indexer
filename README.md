@@ -11,22 +11,24 @@ colorama - 🎨 for coloring the outputs!
  ✔️ Create an awesome UI design
  
  ✔️ Create logic for Indexer
+
+ ✔️ Create logic for finding index of a specific word
  
+ ✔️ Create logic for finding index of a specific word
+
+ ✔️ Handle inputs and outputs
+
  ✔️ Create logic for clear terminal
  
  ✔️ Create logic for logging
-
+ 
  ❌ Create logic for printing formatted input
  
  ❌ Create logic for printing formatted output 
 
  ❌ Implementing logging logic into functions
 
- 
- ✔️ Create logic for finding index of a specific word
- 
- ✔️ Create logic for finding index of a specific word
- 
+ ❌ Finish README.md
  
  <h3>Here's the final UI design Prototype (Work in progress)</h3>
  
