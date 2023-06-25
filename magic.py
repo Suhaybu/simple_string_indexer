@@ -19,10 +19,10 @@ def index_string(input_string, delimiter):
 
 # Search methods:
 # Takes user input and word to return index of word
-def get_index(input_string, word):
+def get_index(input_string, word, delimiter):
     print(interface.splitter('return index'))
     # Splits the user input string into seperate words stored in a list
-    words = input_string.split()
+    words = input_string.split(delimiter)
     try:
         # Converts integer inputs to string
         if isinstance(word, str):
@@ -34,10 +34,10 @@ def get_index(input_string, word):
 
 
 # Takes user input and index to return word @ index
-def get_word(input_string, index):
+def get_word(input_string, index, delimiter):
     print(interface.splitter('return word'))
     # Splits the user input string into seperate words stored in a list
-    words = input_string.split()
+    words = input_string.split(delimiter)
     # Ensures input index is int
     index = int(index)
     # Ensures index is within range
@@ -57,5 +57,5 @@ def clear_terminal():
 
 
 # TODO Line length formatter to insure no line contains characters longer than 75
-def length_formatter():
-    ...
+def length_formatter(input_string, delimiter):
+    words = input_string.split(delimiter)
