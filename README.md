@@ -22,10 +22,8 @@ colorama - 🎨 for coloring the outputs!
  
  ✔️ Create logic for logging
  
- ❌ Create logic for printing formatted input
+ ✔️ Create logic for printing formatted input/output
  
- ❌ Create logic for printing formatted output 
-
  ❌ Implementing logging logic into functions
 
  ❌ Finish README.md
