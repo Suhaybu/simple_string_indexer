@@ -58,4 +58,21 @@ def clear_terminal():
 
 # TODO Line length formatter to insure no line contains characters longer than 75
 def length_formatter(input_string, delimiter):
-    words = input_string.split(delimiter)
+    words = input_string.split(delimiter)  # Extracts the individual words from the string
+    line_counter = 0
+
+    for index in range(len(words)):
+        line_counter += len(words[index]) + len(delimiter)  # Adds the word length plus delimiter
+        if line_counter > 75:  # If line + delimiter is longer than 75
+            check_counter = line_counter - len(delimiter)  # Check if without delimiter, it's still > 75
+            if check_counter > 75:  # If it is still larger than 75 without delimiter
+                words[index] = '\n' + words[index]  # Add '\n' to the current word
+                line_counter = len(words[index]) + len(delimiter)  # Reset the line_counter
+        elif line_counter == 75:
+            words[index] += '\n' + words[index]  # Add '\n' to the current word
+
+    formatted_string = delimiter.join(words)  # Join the words back together with the delimiter
+    return formatted_string
+
+
+# │ Time to put down your phone and get back to work! Enter my room code:       │

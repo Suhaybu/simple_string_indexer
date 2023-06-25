@@ -73,3 +73,11 @@ def error(type):
         return f'''{Fore.LIGHTYELLOW_EX}╔═════════════════════════════════════════════════════════════════════════════╗
 ║                 {Style.BRIGHT}{Fore.RED}Invalid Choice. Please enter a valid number{Style.RESET_ALL}{Fore.LIGHTYELLOW_EX}                 ║
 ╚═════════════════════════════════════════════════════════════════════════════╝'''
+
+
+# Fancy input
+def fancy_input(type):
+    if type == 'top':
+        return f'{Fore.LIGHTGREEN_EX}╭─────────────────────────────────────────────────────────────────────────────╮{Fore.RESET}'
+    if type == 'bottom':
+        return f'{Fore.LIGHTGREEN_EX}╰─────────────────────────────────────────────────────────────────────────────╯{Fore.RESET}'
