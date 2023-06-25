@@ -2,7 +2,7 @@ import magic
 import interface
 from magic import clear_terminal
 from interface import menu
-from colorama import Style
+from colorama import Fore, Style
 
 input_string = ''
 
@@ -22,6 +22,22 @@ def get_other_option(input_string, choice, delimiter):
         print(magic.get_index(input_string, data, delimiter))
     elif choice == 'find word':
         print(magic.get_word(input_string, data, delimiter))
+
+
+# Formatter for input/output
+def formatter(formatted_input, delimiter):
+    lines = formatted_input.split('\n')
+
+    for index in range(len(lines)):
+        if len(lines[index]) < 75:
+            while len(lines[index]) < 75:
+                lines[index] += ' '
+
+        lines[index] = f'{Fore.LIGHTGREEN_EX}│ {Fore.RESET}{lines[index]} {Fore.LIGHTGREEN_EX}│{Fore.RESET}'
+
+    formatted_string = '\n'.join(lines)
+    formatted_string = interface.fancy_input('top') + '\n' + formatted_string + '\n' + interface.fancy_input('bottom')
+    return formatted_string
 
 
 # TODO: Selector styler
