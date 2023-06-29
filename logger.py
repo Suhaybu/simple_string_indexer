@@ -2,7 +2,7 @@
 # to make it possible to retain history when I create the next scene
 
 
-class Logger:
+class EventLogger:
     def __init__(self, name):
         self.name = name
         self.log = {}
@@ -22,8 +22,8 @@ class Logger:
             print(f"{state}: {state_type} {data}")
 
 
-Logger()
-Logger.add('greeting')
-Logger.add('printed', 'true')
-Logger.add('exit')
-print(Logger.retrieve())
+EventLogger()
+EventLogger.add('greeting')
+EventLogger.add('printed', 'true')
+EventLogger.add('exit')
+print(EventLogger.retrieve())
