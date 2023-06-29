@@ -22,8 +22,8 @@ class EventLogger:
             print(f"{state}: {state_type} {data}")
 
 
-EventLogger()
-EventLogger.add('greeting')
-EventLogger.add('printed', 'true')
-EventLogger.add('exit')
-print(EventLogger.retrieve())
+logger = EventLogger("my_logger")
+logger.add("initiated")
+logger.add("state1")
+logger.add("state2", "data2")
+print(logger.retrieve())
