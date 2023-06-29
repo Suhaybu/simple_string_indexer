@@ -3,20 +3,23 @@
 
 
 class Logger:
-    log = []
+    def __init__(self, name):
+        self.name = name
+        self.log = {}
 
-    def __init__(self) -> None:
-        print('Test')
+    def add(self, state, data=None):
+        state_type = 0 if data is None else 1
+        self.log[state] = state_type, data
 
-    @staticmethod
-    def add(state, data=None):
-        if data == None:
-            data = 1
-        Logger.log.append((state, data))
+    def retrieve(self):
+        return self.log
 
-    @staticmethod
-    def retrieve():
-        return Logger.log
+    def clear(self):
+        self.log = {}
+
+    def print_log(self):
+        for state, (state_type, data) in self.log.items():
+            print(f"{state}: {state_type} {data}")
 
 
 Logger()
