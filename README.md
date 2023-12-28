@@ -7,7 +7,7 @@ TODO! I still have to do the readme and everything. Ignore this for now
 
 ### Prerequisites
 
--   Python
+-   Python 2.6 or higher
 
 ### Installation
 
