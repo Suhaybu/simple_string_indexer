@@ -1,6 +1,5 @@
-# This file's purpose is storing all print statemnts
+# This file's purpose is storing all print statements
 from colorama import Fore, Style
-
 
 # Greeting
 greeting = f'''
@@ -47,13 +46,13 @@ def splitter(type):
         return f'\n{Fore.CYAN}::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}The word at your index: {Fore.CYAN}·::::::::::::::::::::::::::{Fore.RESET}'
 
 
-# MENUES
+# MENUS
 
 
 def menu(type):
     if type == 'delimiter':
         return f'''{Fore.LIGHTYELLOW_EX}╔═════════════════════════════════════════════════════════════════════════════╗
-║ {Fore.WHITE}1. {Fore.LIGHTBLUE_EX}Default{Fore.WHITE}: {Fore.WHITE}Words in string are seperated with single SPACE{Style.RESET_ALL}{Fore.LIGHTYELLOW_EX}                 ║
+║ {Fore.WHITE}1. {Fore.LIGHTBLUE_EX}Default{Fore.WHITE}: {Fore.WHITE}Words in string are separated with single SPACE{Style.RESET_ALL}{Fore.LIGHTYELLOW_EX}                 ║
 ║ {Fore.WHITE}2. {Fore.LIGHTBLUE_EX}Custom{Fore.WHITE}: {Fore.WHITE}Provide a custom delimiter{Style.RESET_ALL}{Fore.LIGHTYELLOW_EX}                                       ║
 ╚═════════════════════════════════════════════════════════════════════════════╝
 '''

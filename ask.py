@@ -4,12 +4,16 @@ import interface
 
 # Ask for delimiter
 def get_delimiter() -> str:
-    print(interface.splitter('select'))  # Prints the splitter for select option
+    print(
+        interface.splitter('select')
+    )  # Prints the splitter for select option
     print(interface.menu('delimiter'))  # Prints delimiter menu
     # Catches invalid input
     while True:
         try:
-            choice = int(input(interface.enter('choice')))  # Prompts the user for choice
+            choice = int(
+                input(interface.enter('choice'))
+            )  # Prompts the user for choice
             if choice == 1:
                 return ' '
             elif choice == 2:
@@ -30,7 +34,9 @@ def get_string():
 
 # Asks the user for other options
 def other_options():
-    print(interface.splitter('select'))  # Prints the splitter for select option
+    print(
+        interface.splitter('select')
+    )  # Prints the splitter for select option
     print(interface.menu('other options'))
     while True:
         try:

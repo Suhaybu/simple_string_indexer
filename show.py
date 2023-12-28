@@ -1,10 +1,12 @@
 from venv import logger
-import magic
+
+from colorama import Fore, Style
+
 import interface
+import magic
+from interface import menu
 from logger import EventLogger
 from magic import clear_terminal
-from interface import menu
-from colorama import Fore, Style
 
 input_string = ''
 
@@ -35,10 +37,18 @@ def formatter(formatted_input, delimiter):
             while len(lines[index]) < 75:
                 lines[index] += ' '
 
-        lines[index] = f'{Fore.LIGHTGREEN_EX}│ {Fore.RESET}{lines[index]} {Fore.LIGHTGREEN_EX}│{Fore.RESET}'
+        lines[
+            index
+        ] = f'{Fore.LIGHTGREEN_EX}│ {Fore.RESET}{lines[index]} {Fore.LIGHTGREEN_EX}│{Fore.RESET}'
 
     formatted_string = '\n'.join(lines)
-    formatted_string = interface.fancy_input('top') + '\n' + formatted_string + '\n' + interface.fancy_input('bottom')
+    formatted_string = (
+        interface.fancy_input('top')
+        + '\n'
+        + formatted_string
+        + '\n'
+        + interface.fancy_input('bottom')
+    )
     return formatted_string
 
 
@@ -46,10 +56,18 @@ def formatter(formatted_input, delimiter):
 menu_delimiter = menu('delimiter')
 selected_choice = 1
 if selected_choice == 1:
-    menu_delimiter = menu_delimiter.replace(f'{selected_choice}.', f'{Style.BRIGHT}{selected_choice}.')
-    menu_delimiter = menu_delimiter.replace(f'{selected_choice+1}.', f'{Style.DIM}{selected_choice}.')
+    menu_delimiter = menu_delimiter.replace(
+        f'{selected_choice}.', f'{Style.BRIGHT}{selected_choice}.'
+    )
+    menu_delimiter = menu_delimiter.replace(
+        f'{selected_choice+1}.', f'{Style.DIM}{selected_choice}.'
+    )
 elif selected_choice == 2:
-    menu_delimiter = menu_delimiter.replace(f'{selected_choice}.', f'{Style.BRIGHT}{selected_choice}.')
-    menu_delimiter = menu_delimiter.replace(f'{selected_choice+1}.', f'{Style.DIM}{selected_choice}.')
+    menu_delimiter = menu_delimiter.replace(
+        f'{selected_choice}.', f'{Style.BRIGHT}{selected_choice}.'
+    )
+    menu_delimiter = menu_delimiter.replace(
+        f'{selected_choice+1}.', f'{Style.DIM}{selected_choice}.'
+    )
 else:
     print('Error!')
