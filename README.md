@@ -1,6 +1,7 @@
 # simple-string-indexer
 
-<h2>The rich history behind this tool</h2>
+## The rich history behind this tool
+
 TODO! I still have to do the readme and everything. Ignore this for now
 
 ## Getting Started
@@ -20,34 +21,40 @@ TODO! I still have to do the readme and everything. Ignore this for now
     pip install -r requirements.txt
     ```
 
-<h2>Python libraries used</h2>
-colorama - 🎨 for coloring the outputs! 
+### Running the code
 
-<h2>Current tasks</h2>
+Simply run the `run.py` file in the directory.
 
- ✔️ Create an awesome UI design
- 
- ✔️ Create logic for Indexer
+```bash
+    python run.py
+```
 
- ✔️ Create logic for finding index of a specific word
- 
- ✔️ Create logic for finding index of a specific word
+## Current tasks
 
- ✔️ Handle inputs and outputs
+✔️ Create an awesome UI design
 
- ✔️ Create logic for clear terminal
- 
- ✔️ Create logic for logging
- 
- ✔️ Create logic for printing formatted input/output
- 
- ❌ Implementing logging logic into functions
+✔️ Create logic for Indexer
 
- ❌ Finish README.md
- 
- <h3>Here's the final UI design Prototype (Work in progress)</h3>
- 
- 
+✔️ Create logic for finding index of a specific word
+
+✔️ Create logic for finding index of a specific word
+
+✔️ Handle inputs and outputs
+
+✔️ Create logic for clear terminal
+
+✔️ Create logic for logging
+
+✔️ Create logic for printing formatted input/output
+
+❌ Implementing logging logic into functions
+
+❌ Finish README.md
+
+❌ Restructure the poorly structured code
+
+### Here's a sneak peak of UI design Prototype
+
 ```
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ █▀ █ █▀▄▀█ █▀█ █░░ █▀▀   █▀ ▀█▀ █▀█ █ █▄░█ █▀▀   █ █▄░█ █▀▄ █▀▀ ▀▄▀ █▀▀ █▀█ ┃
@@ -73,14 +80,15 @@ colorama - 🎨 for coloring the outputs!
 :::::::::::::::::::::::::::::· Select an option: ·:::::::::::::::::::::::::::::
 ╔═════════════════════════════════════════════════════════════════════════════╗
 ║ 1. Find index of a specific word                                            ║
-║ 2. Find word at a specfiic index                                            ║
+║ 2. Find word at a specific index                                            ║
 ║ 3. Input another String                                                     ║
 ║ 4. Exit                                                                     ║
 ╚═════════════════════════════════════════════════════════════════════════════╝
 
-:: Enter your choice: 
+:: Enter your choice:
 ```
 
+## Credits
 
-<h2>Credits</h2>
-<li> ASCII Art was generated using: https://fsymbols.com/
+-   ASCII Art 🖌️ was generated using [FSymbols.com](https://fsymbols.com/)
+-   [colorama](https://pypi.org/project/colorama/) 🎨 library used for coloring the outputs!
