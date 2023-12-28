@@ -1,12 +1,11 @@
-from venv import logger
+'''
+This file handles all dealing with getting the outputs.
+'''
 
 from colorama import Fore, Style
 
-import interface
-import magic
-from interface import menu
-from logger import EventLogger
-from magic import clear_terminal
+from . import interface, magic
+from .interface import menu
 
 input_string = ''
 

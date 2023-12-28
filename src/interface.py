@@ -1,4 +1,6 @@
-# This file's purpose is storing all print statements
+'''
+This file's purpose is storing all statements and designs that will be printed
+'''
 from colorama import Fore, Style
 
 # Greeting

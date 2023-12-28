@@ -1,5 +1,7 @@
-# Imports
-import interface
+'''
+Handles all the questions that are asked
+'''
+from . import interface
 
 
 # Ask for delimiter

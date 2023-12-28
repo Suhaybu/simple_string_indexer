@@ -1,6 +1,4 @@
-import ask
-import interface
-import show
+from src import ask, interface, show
 
 if __name__ == '__main__':
     choice = 'input'

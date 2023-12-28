@@ -1,5 +1,7 @@
-# Class I created to help me keep track of all the user interactions
-# to make it possible to retain history when I create the next scene
+'''
+TODO: Class I created to help me keep track of all user interactions
+locally for history retention so I can make the UI cooler
+'''
 
 
 class EventLogger:

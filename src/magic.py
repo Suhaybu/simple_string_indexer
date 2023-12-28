@@ -1,10 +1,12 @@
-# This file's purpose is to handle the more technical backend stuff
+'''
+This file contains most of the logical operations and calculations
+'''
 
 import os
 
 from colorama import Fore
 
-import interface
+from . import interface
 
 
 # Indexing method:
