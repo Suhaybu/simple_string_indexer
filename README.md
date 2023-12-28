@@ -3,6 +3,23 @@
 <h2>The rich history behind this tool</h2>
 TODO! I still have to do the readme and everything. Ignore this for now
 
+## Getting Started
+
+### Prerequisites
+
+-   Python
+
+### Installation
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/suhaybu/simple-string-indexer.git
+    ```
+2. **Install the required packages:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
 <h2>Python libraries used</h2>
 colorama - 🎨 for coloring the outputs! 
 
