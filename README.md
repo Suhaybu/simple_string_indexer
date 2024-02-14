@@ -26,7 +26,7 @@ TODO! I still have to do the readme and everything. Ignore this for now
 Simply run the `run.py` file in the directory.
 
 ```bash
-    python run.py
+	python run.py
 ```
 
 ## Current tasks
