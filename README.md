@@ -10,13 +10,22 @@ TODO! I still have to do the readme and everything. Ignore this for now
 
 -   Python 2.6 or higher
 
-### Installation
+### Set up
 
 1. **Clone the repository:**
+
     ```bash
     git clone https://github.com/suhaybu/simple-string-indexer.git
     ```
-2. **Install the required packages:**
+
+2. **Setup a virtual environment [Optional]:**
+
+    - Initialize the venv: `python3 -m venv .venv`
+    - Activate (Linux/MacOS): `source .venv/bin/activate`
+    - Acrivate (Windows): `.\.venv\Scripts\activate`
+
+3. **Install the depdendencies:**
+
     ```bash
     pip install -r requirements.txt
     ```
