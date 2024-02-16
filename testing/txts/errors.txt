@@ -1,0 +1,3 @@
+{Fore.LIGHTYELLOW_EX}╔═════════════════════════════════════════════════════════════════════════════╗
+║                 {Style.BRIGHT}{Fore.RED}Invalid Choice. Please enter a valid number{Style.RESET_ALL}{Fore.LIGHTYELLOW_EX}                 ║
+╚═════════════════════════════════════════════════════════════════════════════╝

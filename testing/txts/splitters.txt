@@ -1,0 +1,23 @@
+@select
+{Fore.CYAN}:::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Select an option: {Fore.CYAN}·:::::::::::::::::::::::::::::{Fore.RESET}
+
+@user_input
+{Fore.CYAN}::::::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Your input: {Fore.CYAN}·::::::::::::::::::::::::::::::::{Fore.RESET}
+
+@result
+{Fore.CYAN}::::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Indexed Result: {Fore.CYAN}·::::::::::::::::::::::::::::::{Fore.RESET}
+
+@input
+{Fore.CYAN}:::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Input another String: {Fore.CYAN}·:::::::::::::::::::::::::::{Fore.RESET}
+
+@find_word
+{Fore.CYAN}::::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Find word at index: {Fore.CYAN}·::::::::::::::::::::::::::::{Fore.RESET}
+
+@find_index
+{Fore.CYAN}:::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}Find index of a word: {Fore.CYAN}·:::::::::::::::::::::::::::{Fore.RESET}
+
+@return_index
+{Fore.CYAN}::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}The index of your word: {Fore.CYAN}·::::::::::::::::::::::::::{Fore.RESET}
+
+@return_word
+{Fore.CYAN}::::::::::::::::::::::::::· {Fore.LIGHTYELLOW_EX}The word at your index: {Fore.CYAN}·::::::::::::::::::::::::::{Fore.RESET}

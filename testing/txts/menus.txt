@@ -1,0 +1,13 @@
+@delimiter
+{Fore.LIGHTYELLOW_EX}╔═════════════════════════════════════════════════════════════════════════════╗
+║ {Fore.WHITE}1. {Fore.LIGHTBLUE_EX}Default{Fore.WHITE}: {Fore.WHITE}Words in string are separated with single SPACE{Style.RESET_ALL}{Fore.LIGHTYELLOW_EX}                 ║
+║ {Fore.WHITE}2. {Fore.LIGHTBLUE_EX}Custom{Fore.WHITE}: {Fore.WHITE}Provide a custom delimiter{Style.RESET_ALL}{Fore.LIGHTYELLOW_EX}                                       ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+
+@other_options
+{Fore.LIGHTYELLOW_EX}╔═════════════════════════════════════════════════════════════════════════════╗
+║ {Fore.WHITE}1. {Fore.WHITE}Find index of a specific word{Fore.LIGHTYELLOW_EX}                                            ║
+║ {Fore.WHITE}2. {Fore.WHITE}Find word at a specific index{Fore.LIGHTYELLOW_EX}                                            ║
+║ {Fore.WHITE}3. {Fore.WHITE}Input another String{Fore.LIGHTYELLOW_EX}                                                     ║
+║ {Fore.WHITE}4. {Fore.WHITE}Exit{Fore.LIGHTYELLOW_EX}                                                                     ║
+╚═════════════════════════════════════════════════════════════════════════════╝
