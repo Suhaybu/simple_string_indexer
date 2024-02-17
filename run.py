@@ -1,17 +1,18 @@
-from src import ask, interface, show
+from src import ask, interface, receive
 
 if __name__ == '__main__':
-	choice = 'input'
+	choice = 'input'  # Default state is recieving input
+	print(interface.greeting)  # Prints the greetings banner
 
-	print(interface.greeting)
-	while choice == 'input':
+	while choice == 'input':  # Ensures program runs until exited
 		delimiter = ask.get_delimiter()
 		user_input = ask.get_string()
-		show.get_output(user_input, delimiter)
+
+		receive.get_output(user_input, delimiter)
 		choice = ask.other_options()
 
 		while choice != 'input' and choice != 'exit':
-			show.get_other_option(user_input, choice, delimiter)
+			receive.get_other_option(user_input, choice, delimiter)
 			choice = ask.other_options()
 
 	raise SystemExit('Exiting the program.')
