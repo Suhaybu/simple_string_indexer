@@ -1,7 +1,7 @@
 """
 Handles all the questions that are asked
 """
-from . import interface
+from src import interface
 
 
 # Ask for delimiter

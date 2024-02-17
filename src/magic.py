@@ -6,7 +6,7 @@ import os
 
 from colorama import Fore
 
-from . import interface
+from src import interface
 
 
 # Indexing method:

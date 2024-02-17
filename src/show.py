@@ -4,8 +4,8 @@ This file handles all dealing with getting the outputs.
 
 from colorama import Fore, Style
 
-from . import interface, magic
-from .interface import menu
+from src import interface, magic
+from src.interface import menu
 
 input_string = ''
 
