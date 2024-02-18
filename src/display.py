@@ -1,7 +1,9 @@
 """
 Display introduces logic enabling logging to be bundled with print statements
 """
-from src.interface import (  # noqa: F401
+import interface
+from colorama import Fore, Style  # noqa: F401
+from interface import (  # noqa: F401
 	enter,
 	error,
 	fancy_input,
@@ -11,14 +13,13 @@ from src.interface import (  # noqa: F401
 )
 
 
-def display(type: str, component: str, state=None):
-	if type not in ['input', 'output']:
-		raise ValueError('Type specified must be input or output')
-
-	if callable(component):
-		print(component(state))
+def display(parameter: str):
+	if parameter is not None:
+		print(parameter)
 	else:
-		raise TypeError('Component must be callable.')
+		raise ValueError('The parameter is invalid. Make sure they exist.')
 
 
-display('input', '')
+# Testing
+display(interface.splitter('user input'))
+display(interface.splitter())
