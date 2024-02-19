@@ -2,12 +2,13 @@
 Handles all the questions that are asked
 """
 from src import interface
+from src.display import display
 
 
 # Ask for delimiter
 def get_delimiter() -> str:
-	print(interface.splitter('select'))  # Prints the splitter for select option
-	print(interface.menu('delimiter'))  # Prints delimiter menu
+	display(interface.splitter('select'))  # displays the splitter for select option
+	display(interface.menu('delimiter'))  # displays delimiter menu
 	# Catches invalid input
 	while True:
 		try:
@@ -19,23 +20,23 @@ def get_delimiter() -> str:
 			elif choice == 2:
 				return input(interface.enter('delimiter'))
 			else:
-				print(interface.error('invalid choice'))
-				print(interface.menu('delimiter'))
+				display(interface.error('invalid choice'))
+				display(interface.menu('delimiter'))
 		except ValueError:
-			print(interface.error('invalid choice'))
-			print(interface.menu('delimiter'))
+			display(interface.error('invalid choice'))
+			display(interface.menu('delimiter'))
 
 
 # Asks the user for input
 def get_string():
-	print(interface.splitter('user input'))
+	display(interface.splitter('user input'))
 	return input(interface.enter('input'))
 
 
 # Asks the user for other options
 def other_options():
-	print(interface.splitter('select'))  # Prints the splitter for select option
-	print(interface.menu('other options'))
+	display(interface.splitter('select'))  # displays the splitter for select option
+	display(interface.menu('other options'))
 	while True:
 		try:
 			choice = int(input(interface.enter('choice')))
@@ -50,8 +51,8 @@ def other_options():
 				elif choice == 4:
 					return 'exit'
 			else:
-				print(interface.error('invalid choice'))
-				print(interface.menu('other options'))
+				display(interface.error('invalid choice'))
+				display(interface.menu('other options'))
 		except ValueError:
-			print(interface.error('invalid choice'))
-			print(interface.menu('other options'))
+			display(interface.error('invalid choice'))
+			display(interface.menu('other options'))
