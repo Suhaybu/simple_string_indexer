@@ -1,8 +1,9 @@
 from src import ask, interface, receive
+from src.display import display
 
 if __name__ == '__main__':
 	choice = 'input'  # Default state is receiving input
-	print(interface.greeting)  # Prints the greetings banner
+	display(interface.greeting)  # Prints the greetings banner
 
 	while choice == 'input':  # Ensures program runs until exited
 		delimiter = ask.get_delimiter()
